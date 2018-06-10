@@ -1,12 +1,205 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>Нёрдс - студия веб-дизайна</title>
+</head>
 
-  </body>
+<body>
+  <header class="page-header">
+    <nav class="main-navigation">
+      <a class="main-header-logo">
+        <img src="http://placehold.it/160x65" alt="Логотип «Нёрдс»" width="160" height="65">
+      </a>
+      <ul class="site-navigation">
+        <li>
+          <a href="#">Студия</a>
+        </li>
+        <li>
+          <a href="#">Клиенты</a>
+        </li>
+        <li>
+          <a href="catalog.html">Магазин</a>
+        </li>
+        <li>
+          <a href="#">Контакты</a>
+        </li>
+      </ul>
+      <a class="shopping-cart" href="#">Корзина</a>
+    </nav>
+  </header>
+  
+  <main class="container">
+    <h1 class="visually-hidden">«Нёрдс» - студия веб-дизайна</h1>
+    <section class="features">
+      <h2 class="visually-hidden">Наши особенности</h2>
+      <div class="slider">
+        <input type="radio" name="slides" id="point1" checked>
+        <input type="radio" name="slides" id="point2">
+        <input type="radio" name="slides" id="point3">
+        <ul class="box-slides">
+          <li class="slides slide1">
+            <p>
+              <b>Долго, дорого, скурпулезно.</b>
+            </p>
+            <p>
+              Математически выверенный дизайн
+              <br> для вашего сайта или мобильного приложения
+            </p>
+            <a class="button" href="#">Узнать больше</a>
+          </li>
+          <li class="slides slide2">
+            <p>
+              <b>Любим математику как никто другой</b>
+            </p>
+            <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+            <a class="button" href="#">Узнать больше</a>
+          </li>
+          <li class="slides slide3">
+            <p>
+              <b>Только ночь, только хардкор</b>
+            </p>
+            <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+            <a class="button" href="#">Узнать больше</a>
+          </li>
+        </ul>
+        <div class="control-slides">
+          <label class="control-slides1" for="point1"></label>
+          <label class="control-slides2" for="point2"></label>
+          <label class="control-slides3" for="point3"></label>
+        </div>
+      </div>
+    </section>
+
+    <section class="services">
+      <h2 class="visually-hidden">Наши услуги</h2>
+      <ul class="services-list">
+        <li class="service-item">
+          <h3>Веб-сайты</h3>
+          <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+          <span class="button service-button service-button-web">Заказать</span>
+        </li>
+        <li class="service-item">
+          <h3>Приложения</h3>
+          <p>Покорите топ-10 приложений в AppStore и Google play</p>
+          <span class="button service-button service-button-application">Заказать</span>
+        </li>
+        <li class="service-item">
+          <h3>Презентации</h3>
+          <p>Вы даже не подозреваете насколько вы изумительны</p>
+          <span class="button service-button service-button-presentation">Заказать</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="about">
+      <h2 class="visually-hidden">О нас</h2>
+      <p>
+        <b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b>
+      </p>
+      <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук,
+        как роботы.</p>
+      <p>
+        <b>Выполняем заказы на разработку:</b>
+      </p>
+      <ul>
+        <li>Веб-сайтов любой сложности</li>
+        <li>Мобильных приложений для iOS и Android</li>
+        <li>Слайдшоу и видео для корпоративных презентаций</li>
+      </ul>
+    </section>
+
+    <section class="principles">
+      <h2 class="visually-hidden">Наши принципы</h2>
+      <a>
+        <img src="http://placehold.it/360x208" alt="Логотип Нёрдс" width="360" height="208">
+      </a>
+      <p>
+        <b>C 2004 года любим точность во всем:</b>
+      </p>
+      <table>
+        <tr>
+          <th>146%</th>
+          <th>100%</th>
+          <th>50%</th>
+        </tr>
+        <tr>
+          <td>Уровень самоотдачи</td>
+          <td>Соблюдение сроков</td>
+          <td>Минимальная предоплата</td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="partners">
+      <h2 class="visually-hidden">Наши партнеры</h2>
+      <ul class="partners-list">
+        <li class="partner-item">
+          <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
+            <img src="http://placehold.it/260x180" alt="Лого html academy" width="260" height="180">
+          </a>
+        </li>
+        <li class="partner-item">
+          <a href="http://barbershop-borodinski.webflow.io/" target="_blank">
+            <img src="http://placehold.it/260x180" alt="Лого barbershop Borodinski" width="260" height="180">
+          </a>
+        </li>
+        <li class="partner-item">
+          <a href="#">
+            <img src="http://placehold.it/260x180" alt="Лого PINK" width="260" height="180">
+          </a>
+        </li>
+        <li class="partner-item">
+          <a href="#">
+            <img src="http://placehold.it/260x180" alt="Лого MISHKA" width="260" height="180">
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="top-footer">
+      <section class="contacts">
+        <h2 class="visually-hidden">Наши контакты</h2>
+        <p>
+          <b>Nёrds design studio</b>
+        </p>
+        <p>
+          191186, Санкт-Петербург,
+          <br> ул. Б. Конюшенная, д. 19/8
+        </p>
+        <p>тел. +7 (812) 275-75-75</p>
+        <span class="button contacts-button">Напишите нам</span>
+      </section>
+      <img class="mark-map" src="http://placehold.it/367x190" alt="Метка на карте">
+    </div>
+    <div class="bottom-footer">
+      <ul class="social-button">
+        <li class="social-button social-button-vk">
+          <a href="#">В контакте</a>
+        </li>
+        <li class="social-button social-button-fb">
+          <a href="#">Фейсбук</a>
+        </li>
+        <li class="social-button social-button-insta">
+          <a href="#">Инстаграм</a>
+        </li>
+      </ul>
+      <div class="tagline">
+        <p>
+          <b>Давайте дружить, это выгодно!</b>
+        </p>
+        <p>Скидка 10% для друзей из социальных сетей</p>
+      </div>
+    </div>
+  </footer>
+  <section class="modal modal-write-us">
+    <h2>Напишите нам</h2>
+    <span class="modal-clouse">x</span>
+    <!-- Здесь будет форма -->
+  </section>
+</body>
+
 </html>
