@@ -26,7 +26,11 @@
           <a href="#">Контакты</a>
         </li>
       </ul>
-      <a class="shopping-cart" href="#">Корзина</a>
+      <ul class="shoping-navigation">
+        <li>
+          <a class="shopping-cart" href="#">Корзина</a>
+        </li>
+      </ul>
     </nav>
   </header>
 
@@ -35,7 +39,65 @@
     <div class="wrapper-catalog">
       <section class="filters">
         <h2 class="visually-hidden">Фильтр шаблонов</h2>
-        <!-- Здесь будет форма фильтра -->
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Стоимость:</legend>
+            <div id="slider-range"></div>
+            <div class="input-range">
+              <p>
+                <label for="cost-min">от</label>
+                <input type="text" name="cost-min" value="0" id="cost-min">
+              </p>
+              <p>
+                <label for="cost-max">до</label>
+                <input type="text" name="cost-max" value="15000" id="cost-max">
+              </p>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Сетка:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grids-group" id="filter-adaptive" checked>
+                <label for="filter-adaptive">Адаптивная</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grids-group" id="filter-fixed">
+                <label for="filter-fixed">Фиксированная</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grids-group" id="filter-rubber">
+                <label for="filter-rubber">Резиновая</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+              <legend>Особенности:</legend>
+              <ul>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
+                  <label for="filter-slider">Слайдер</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="feature" id="filter-feature">
+                  <label for="filter-feature">Блок преимуществ</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" id="filter-news" checked>
+                  <label for="filter-news">Новости</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
+                  <label for="filter-gallery">Галерея</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="shopping-cart" id="filter-shopping-cart">
+                  <label for="filter-shopping-cart">Корзина</label>
+                </li>
+              </ul>
+          </fieldset>
+          <button type="submit" class="button filter-button">Показать</button>
+        </form>
       </section>
       <div class="wrapper-right">
         <section class="sorting">
@@ -45,21 +107,21 @@
           </p>
           <ul class="sorting-list">
             <li class="sorting-item">
-              <button type="button" class="sorting-button-price">По цене</span>
+              <button type="button" class="sorting-button-price">По цене</button>
             </li>
             <li class="sorting-item">
-              <button type="button" class="sorting-button-type">По типу</span>
+              <button type="button" class="sorting-button-type">По типу</button>
             </li>
             <li class="sorting-item">
-              <button type="button" class="sorting-button-name">По названию</span>
+              <button type="button" class="sorting-button-name">По названию</button>
             </li>
           </ul>
           <ul class="sorting-order-list">
             <li class="sorting-order-item">
-              <button type="button" class="down">По убыванию</span>
+              <button type="button" class="down">По убыванию</button>
             </li>
             <li class="sorting-order-item">
-              <button type="button" class="up">По возрастанию</span>
+              <button type="button" class="up">По возрастанию</button>
             </li>
           </ul>
         </section>
@@ -73,7 +135,7 @@
                 <p>
                   <b>
                     Информационный сайт
-                    <br> для туристов
+                    <br>для туристов
                   </b>
                 </p>
                 <a class="button catalog-button" href="#">9 900 Руб.</a>
@@ -81,7 +143,7 @@
 
               <figure>
                 <img src="img/browser.svg" alt="" width="360" height="40">
-                <img src="img/img-sedona.jpg" alt="Шаблон Информационного сайта для туристов Sedona" width="360" height="576">
+                <img src="img/img-sedona.jpg" alt="Шаблон информационного сайта для туристов Sedona" width="360" height="576">
               </figure>
             </li>
 
@@ -91,7 +153,7 @@
                 <p>
                   <b>
                     Продуктовый лендинг
-                    <br> приложения для iOS и Android
+                    <br>приложения для iOS и Android
                   </b>
                 </p>
                 <a class="button catalog-button" href="#">9 900 Руб.</a>
@@ -137,7 +199,7 @@
 
               <figure>
                 <img src="img/browser.svg" alt="" width="360" height="40">
-                <img src="img/img-mishka.jpg" alt="Шаблон Интернет-магазина игрушек Mishka" width="360" height="576">
+                <img src="img/img-mishka.jpg" alt="Шаблон интернет-магазина игрушек Mishka" width="360" height="576">
               </figure>
             </li>
 
@@ -173,7 +235,7 @@
 
                 <figure>
                   <img src="img/browser.svg" alt="" width="360" height="40">
-                  <img src="img/img-kvast.jpg" alt="Шаблон Сайта производителя каваса Кваст" width="360" height="576">
+                  <img src="img/img-kvast.jpg" alt="Шаблон сайта производителя каваса Кваст" width="360" height="576">
                 </figure>
               </li>
           </ul>
@@ -206,9 +268,11 @@
           <br>ул. Б. Конюшенная, д. 19/8
         </p>
         <p>тел. +7 (812) 275-75-75</p>
-        <button type="button" class="button contacts-button">Напишите нам</span>
+        <button type="button" class="button contacts-button">Напишите нам</button>
       </section>
-      <img class="map" src="img/map.png" alt="Месторасположение на карте" width="1440" height="416">
+      <p>
+        <img class="map" src="img/map.png" alt="На карте: офис студии по адресу ул. Большая Конюшенная 1/8, Санкт-Петербург" width="1440" height="416">
+      </p>
     </div>
     <div class="bottom-footer">
       <ul class="social-button">
@@ -230,13 +294,27 @@
       </div>
     </div>
   </footer>
-
+  
   <section class="modal modal-write-us">
-    <h2>Напишите нам</h2>
-    <span class="modal-clouse">
-      <img src="img/close-cross.svg" alt="Кнопка закрытия окна" width="21" height="21">
-    </span>
-    <!-- Здесь будет форма -->
+      <h2>Напишите нам</h2>
+      <button type="button" class="modal-clouse">
+        <img src="img/close-cross.svg" alt="Кнопка закрытия окна" width="21" height="21">
+      </button>
+      <form class="modal-write-us-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="modal-write-us-item">
+          <label for="field-fullname">Ваше имя:</label><br>
+          <input type="text" id="field-fullname" name="fullname" required placeholder="Имя Фамилия">
+        </p>
+        <p class="modal-write-us-item">
+          <label for="field-email">Ваш e-mail:</label><br>
+          <input type="email" id="field-email" name="email" required placeholder="email@example.com">
+        </p>
+        <p class="modal-write-as-item">
+          <label for="field-content">Текст письма:</label><br>
+          <textarea id="field-content" name="content" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="button" type="submit">Отправить</button>
+      </form>
   </section>
 </body>
 
