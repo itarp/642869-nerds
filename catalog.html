@@ -4,9 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <title>Nerds-Магазин готовых шаблонов</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="inner-page">
   <header class="page-header">
     <nav class="main-navigation">
       <a class="main-header-logo" href="index.html">
@@ -34,14 +37,14 @@
     </nav>
   </header>
 
-  <main class="container">
+  <main class="main-container">
     <h1 class="page-title">Магазин готовых шаблонов</h1>
     <div class="wrapper-catalog">
       <section class="filters">
         <h2 class="visually-hidden">Фильтр шаблонов</h2>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
-            <legend>Стоимость:</legend>
+            <legend class="title-price">Стоимость:</legend>
             <div id="slider-range"></div>
             <div class="input-range">
               <p>
@@ -50,7 +53,7 @@
               </p>
               <p>
                 <label for="cost-max">до</label>
-                <input type="text" name="cost-max" value="15000" id="cost-max">
+                <input type="text" name="cost-max" value="15 000" id="cost-max">
               </p>
             </div>
           </fieldset>
@@ -118,7 +121,7 @@
           </ul>
           <ul class="sorting-order-list">
             <li class="sorting-order-item">
-              <a href="#" class="sorting-button sorting-button-down">По убыванию</a>
+              <a href="#" class="sorting-button sorting-button-down sorting-button-active">По убыванию</a>
             </li>
             <li class="sorting-order-item">
               <a href="#" class="sorting-button sorting-button-up">По возрастанию</a>
@@ -260,9 +263,7 @@
     <div class="top-footer">
       <section class="contacts">
         <h2 class="visually-hidden">Наши контакты</h2>
-        <p>
-          <b>Nёrds design studio</b>
-        </p>
+        <p class="tagline">Nёrds design studio</p>
         <p>
           191186, Санкт-Петербург,
           <br>ул. Б. Конюшенная, д. 19/8
