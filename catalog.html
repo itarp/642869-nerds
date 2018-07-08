@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -266,7 +266,7 @@
         <p class="tagline">Nёrds design studio</p>
         <p>
           191186, Санкт-Петербург,
-          <br>ул. Б. Конюшенная, д. 19/8
+          <br> ул. Б. Конюшенная, д. 19/8
         </p>
         <p>тел. +7 (812) 275-75-75</p>
         <button type="button" class="button contacts-button">Напишите нам</button>
@@ -276,7 +276,7 @@
       </p>
     </div>
     <div class="bottom-footer">
-      <ul class="social-button">
+      <ul class="social-button-list">
         <li class="social-button social-button-vk">
           <a href="#">В контакте</a>
         </li>
@@ -291,17 +291,18 @@
         <p>
           <b>Давайте дружить, это выгодно!</b>
         </p>
-        <p>Скидка 10% для друзей из социальных сетей</p>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </div>
   </footer>
-  
+    
   <section class="modal modal-write-us">
-      <h2>Напишите нам</h2>
-      <button type="button" class="modal-clouse">
-        <img src="img/close-cross.svg" alt="Кнопка закрытия окна" width="21" height="21">
-      </button>
-      <form class="modal-write-us-form" action="https://echo.htmlacademy.ru" method="post">
+    <h2>Напишите нам</h2>
+    <button type="button" class="modal-clouse">
+      <img src="img/close-cross.svg" alt="Кнопка закрытия окна" width="21" height="21">
+    </button>
+    <form class="modal-write-us-form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="box-data">
         <p class="modal-write-us-item">
           <label for="field-fullname">Ваше имя:</label><br>
           <input type="text" id="field-fullname" name="fullname" required placeholder="Имя Фамилия">
@@ -310,12 +311,13 @@
           <label for="field-email">Ваш e-mail:</label><br>
           <input type="email" id="field-email" name="email" required placeholder="email@example.com">
         </p>
-        <p class="modal-write-as-item">
-          <label for="field-content">Текст письма:</label><br>
-          <textarea id="field-content" name="content" cols="30" rows="10" placeholder="В свободной форме"></textarea>
-        </p>
-        <button class="button" type="submit">Отправить</button>
-      </form>
+      </div>
+      <p class="modal-write-as-item">
+        <label for="field-content">Текст письма:</label><br>
+        <textarea id="field-content" name="content" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+      </p>
+      <button class="button" type="submit">Отправить</button>
+    </form>
   </section>
 </body>
 
